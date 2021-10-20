@@ -257,8 +257,7 @@ void brute(char password[], char helper[], int size)
 		{
 			count++;
 			helper[x] == '9';
-		}
-		
+		}	
 	}	
 	
 	if(count == size)
