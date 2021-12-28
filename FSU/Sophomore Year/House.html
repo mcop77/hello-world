@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>ASCII House</h1>
+			<p>Doesn't really format to well on web. Size = 10.</p>
+	
+	<script>
+		for(i = 11; i > 0; --i) 
+		{
+			for(j = 0; j < i; ++j) 
+			{
+				document.write("_");	
+			}
+				
+			for(y = 12; y > i; --y) 
+			{
+				if(y == 12) 
+				{
+					document.write("* "); 
+				}
+					
+				if(y < 11) 
+				{					
+					document.write("X "); 
+				}	
+			}
+				
+			if(i < 11) 
+			{
+				document.write("* "); 
+			}
+				
+			document.write("<br>");
+		}
+
+		for(x = 0; x < 12; ++x) 
+		{
+			if(x == 0 || x == 1 || x == 10 || x == 11)
+			{
+				document.write("* ");
+			}
+			
+			else document.write("X "); 
+		}
+		
+		document.write("<br>");
+		
+		for(a = 0; a < 8; ++a) 
+		{
+			document.write("__");
+			
+			for(q = 0; q < 10; ++q) 
+			{
+				if(q == 0 || q == 9) 
+				{
+					document.write("* ");
+				}
+				
+				else document.write("X ");
+			}
+			
+			document.write("<br>");
+		}
+		
+		document.write("__");
+		
+		for(z = 0; z < 10; ++z)
+		{
+			document.write("* ");
+		}
+		
+		document.write("<br>");	
+	
+	
+	
+	</script>
+
+
+	</body>
+</html>
