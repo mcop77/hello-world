@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<form action = "{{ url_for('add_review') }}" method = "POST">
+			<h1>Write a Review</h1>
+			Username:
+			<input type = "text" name = "Username"/><br>
+			Restaurant:
+			<input type = "text" name = "Restaurant"/><br>
+			Food:
+			<input type = "number" name = "Food"/><br>
+			Service:
+			<input type = "number" name = "Service"/><br>
+			Ambience:
+			<input type = "number" name = "Ambience"/><br>
+			Price:
+			<input type = "number" name = "Price"/><br>
+			Overall:
+			<input type = "number" name = "Overall"/><br>
+			Review:<br>
+			<textarea name = "Review"/></textarea><br>
+			<input type = "submit" name = "Submit"/>
+		</form>
+		<p><a href='/'>Back to Home</a></p>
+	</body>
+</html>
