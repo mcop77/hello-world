@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<form action = "{{ url_for('get_review') }}" method = 'POST'>
+		<h1>See Reviews for a Restaurant</h1>
+		Restaurant:
+		<input type = "text" name = "Restaurant"/><br>
+		<input type = "submit" name = "Submit"/>
+		<p><a href='/'>Back to Home</a></p>
+	</body>	
+</html>
