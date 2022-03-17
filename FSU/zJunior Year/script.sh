@@ -4,7 +4,6 @@ cd /media/sf_Germany
 
 echo "Loading Images..."
 
-
 for filename in *; do
 	exiftool $filename >> /home/mcop/Desktop/python/ImageMap/exifOutput.txt
 done
